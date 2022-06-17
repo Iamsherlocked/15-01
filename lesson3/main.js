@@ -9,7 +9,7 @@
 //         console.log("Close")
 //     }else {
 //         console.log(user.first_name, user.last_name + " "  + "Open")
-//         // console.log ('${user.first_name} ${user.last_name} Open')
+//         // console.log (`${user.first_name} ${user.last_name} Open`)
 //     }
 // }
 //
@@ -59,6 +59,10 @@
 // }
 //
 // getFullname(user, callBack())
+
+
+
+
 
 
 

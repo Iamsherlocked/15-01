@@ -15,7 +15,7 @@ numbers(number.number1, number.number2)
 function  countChar() {
     const number = prompt("Введите текст")
     console.log(number.length)
-    return numbers.length
+        return numbers.length
 }
 countChar()
 
