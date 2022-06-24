@@ -1,8 +1,8 @@
 // function sayHello() {
 //     console.log("Hello")
 // }
-//
-// // sayHello
+// //
+// sayHello()
 //
 // function getFullname(user, age, user2) {
 //     if(age < 18){
@@ -46,19 +46,21 @@
 //
 // numbers(number.number1, number.number2)
 
-// function getFullname( user, cb) {
-//     console.log(user.first_name, user.last_name)
-// }
-// function callBack() {
-//     console.log("I am call back")
-// }
-//
-// const users = {
-//     first_name: "Jack",
-//     last_name: "Barbaro"
-// }
-//
-// getFullname(user, callBack())
+function getFullname( user, cb) {
+    console.log(user.first_name, user.last_name)
+}
+function callBack() {
+    console.log("I am call back")
+}
+
+const users = {
+    first_name: prompt('Vashe imya'),
+    last_name: prompt('vashe familiya?')
+}
+
+getFullname(users, callBack())
+
+
 
 
 

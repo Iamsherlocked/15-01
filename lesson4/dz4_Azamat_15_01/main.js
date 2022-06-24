@@ -1,30 +1,50 @@
-const counter = document.querySelector('.counter');
-let count = 0;
+const getElement = document.querySelector('.counter');
+let i =0;
 
-function changeCounter (button) {
-    if (button == plus) {
-        count += 1;
-    } else if (button == minus){
-        count -= 1;
-    } else if (button == reset){
-        count = 0;
+function changeElement (click){
+    if (click == plus){
+        i+= 1;
+    } else if (click == minus){
+        i-= 1;
+    } else if (click == reset){
+        i = 0;
+    } if (i < 0){
+        i = 0;
     }
-    counter.innerHTML = count;
-}
-const plus = document.getElementById('plus');
-const minus = document.getElementById('minus');
-const reset = document.getElementById('reset');
-plus.onclick = () => {
-    changeCounter(plus)
+    getElement.innerHTML = i;
 }
 
-minus.onclick = () => {
-    changeCounter(minus)
+plus.onclick = () =>{
+    changeElement(plus)
+};
+
+minus.onclick = () =>{
+    changeElement(minus)
 }
 
 reset.onclick = () =>{
-    changeCounter(reset)
+    changeElement(reset)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

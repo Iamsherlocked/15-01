@@ -1,8 +1,8 @@
 // console.log(document)
 //
-// const blocks =  document.getElementsByClassName('block');
-//     // console.log(blocks)
-//
+const blocks =  document.getElementsByClassName('block');
+    // console.log(blocks)
+
 // const block3 = document.getElementById('block3');
 //     console.log(block3)
 // // block3.className = 'changedClass'
@@ -22,23 +22,23 @@
 // const block2 =  document.querySelectorAll('.block')
 // // console.log(block2)
 // //
-// const button = document.getElementById("button");
-// const input = document.getElementById("input");
-//
-// button.onclick = () => {
-//     const tag = document.createElement('div');
-//     const deleteButton = document.createElement('button')
-//     deleteButton.innerText = "delete"
-//     deleteButton.onclick = () =>{
-//         tag.remove()
-//     }
-//
-//     tag.setAttribute('class', 'block');
-//     tag.innerText = input.value
-//     document.body.append(tag)
-//     tag.append(deleteButton)
-//     input.value = ''
-// }
+const button = document.getElementById("button");
+const input = document.getElementById("input");
+
+button.onclick = () => {
+    const tag = document.createElement('div');
+    const deleteButton = document.createElement('button')
+    deleteButton.innerText = "delete"
+    deleteButton.onclick = () =>{
+        tag.remove()
+    }
+
+    tag.setAttribute('class', 'block');
+    tag.innerText = input.value
+    document.body.append(tag)
+    tag.append(deleteButton)
+    input.value = ''
+}
 
 const documentElement = document.documentElement;
 const headElement = document.head;
@@ -83,9 +83,46 @@ const element = document.querySelector('.block');
 //     font-weight: 600;
 //     margin-bottom: 30px;
 // `
-
-element.style.color = 'yellowgreen'
+//
+// element.style.color = 'red'
 
 const elementStyle = getComputedStyle(element);
 // console.log(elementStyle.color)
+ 
 
+
+document.querySelector('.out1').addEventListener('mousemove', blockWidth);
+
+let w = 100;
+
+function blockWidth () {
+    w++;
+    document.querySelector('.out1').style.width = w + 'px'
+}
+
+//
+// function getElement () {
+//     console.log(arguments)
+//     let sum = 0;
+//     for (let i =0; i < arguments.length; i++) {
+//         sum += arguments[i]
+//
+//     }
+//     console.log(sum)
+// }
+//
+// getElement(4,5,6,4)
+//
+//
+//
+// function getElement2 (...args) {
+//     console.log(args)
+//     let sum = 0;
+//     for (let i =0; i < arguments.length; i++) {
+//         sum += arguments[i]
+//
+//     }
+//     console.log(sum)
+// }
+//
+// getElement2(4,5,6,4)
